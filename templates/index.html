@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Interface Proxy HTTP</title>
+    <style>
+        body { font-family: monospace; background: #111; color: #0f0; padding: 20px; }
+        h1 { margin-bottom: 20px; }
+        pre { height: 600px; overflow-y: scroll; background: #222; padding: 15px; border-radius: 6px; }
+    </style>
+    <script>
+
+      setTimeout(() => location.reload(), 5000);
+    </script>
+</head>
+<body>
+    <h1>Logs du Proxy HTTP</h1>
+    <pre>
+{% for line in logs %}
+{{ line }}{% endfor %}
+    </pre>
+</body>
+</html>
